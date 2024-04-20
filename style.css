@@ -1,0 +1,243 @@
+/* gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+/* main */
+
+/* section1 */
+
+#section1 {
+    text-align: center;
+    padding-inline: 3.6rem;
+}
+
+#section1 img {
+    max-width: 35.4rem;
+    max-height: 37.0rem;
+}
+
+#section1 h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #B52184;
+    margin-top: 1.8rem;
+}
+
+#section1 p {
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: #312D64;
+    margin-bottom: 3.6rem;
+}
+
+#img-button {
+    margin-bottom: 9.0rem;
+}
+
+/* section2 */
+
+#section2 {
+    background: rgb(52,49,147);
+    background: linear-gradient(135deg, rgba(52,49,147,1) 0%, rgba(48,44,99,1) 100%);
+    padding: 5.4rem 3.6rem;
+}
+
+#section2 .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5.0rem;
+    align-items: center;
+}
+
+#section2 .card-wrapper .card {
+    background-color: #ffffff;
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    max-width: 35.0rem;
+}
+
+#section2 .card-wrapper .card h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #B52184;
+    margin: 2.4rem 0 1.2rem 0;
+}
+
+#section2 .card-wrapper .card p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #312D64;
+}
+
+/* section3 */
+
+#section3 {
+    padding-inline: 3.6rem;
+}
+
+#section3 h3{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #B52184;
+    margin-top: 6.4rem;
+    margin-bottom: 4.0rem;
+}
+
+#section3 form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+#section3 form input,
+#section3 form textarea {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #312D64;
+    border: 1.5px solid #312D64;
+    border-radius: 1.6rem;
+}
+
+#section3 form textarea {
+    padding: 1.2rem 1.4rem;
+}
+
+
+#section3 form input::placeholder,
+#section3 form textarea::placeholder {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #312D64;    
+}
+
+#section3 form button {
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    width: 16.0rem;
+    padding: 1.6rem;
+    background-color: #312D64;
+    border: none;
+    border-radius: 1.6rem;
+    margin-bottom: 6.4rem;
+}
+
+/* ícones dentro dos formulários */
+
+#text-name {
+    background: url(./imgs/person.svg) no-repeat scroll 1.4rem 1.2rem;
+    padding: 1.2rem 4.8rem;
+}
+
+#text-email {
+    background: url(./imgs/at.svg) no-repeat scroll 1.4rem 1.2rem;
+    padding: 1.2rem 4.8rem;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgb(52,49,147);
+    background: linear-gradient(135deg, rgba(52,49,147,1) 0%, rgba(48,44,99,1) 100%);
+    padding: 3.2rem 1.6rem;
+}
+
+/* media queries */
+
+@media (min-width: 1440px) {
+
+    /* section1 */
+
+    #section1 {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 2.9rem 10.3rem 10.9rem;
+    }
+
+    #section1 #section1-wrapper {
+        order: 1; /* Propriedade flexbox */
+        margin-top: 31.2rem;
+    }
+    
+    #section1 img {
+        max-width: 72.0rem;
+        max-height: 73.2rem;
+        order: 2;
+    }
+    
+    #section1 h1 {
+        font-size: 5.8rem;
+    }
+
+    #section1 p {
+        font-size: 3.2rem;
+    }
+
+    /* section */
+
+    #section2 .card-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 6.0rem;
+        justify-content: center;
+    }
+
+    #section2 .card-wrapper .card {
+        padding: 3.2rem;
+        min-height: 45.0rem;
+    }
+    
+    #section2 .card-wrapper .card h2 {
+        font-size: 3.2rem;
+        font-weight: 900;
+        color: #B52184;
+        margin: 2.4rem 0 1.2rem 0;
+    }
+    
+    #section2 .card-wrapper .card p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #312D64;
+    }
+
+    /* section3 */
+    #section3 {
+        background: url(./imgs/image\ 11976.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: auto;
+    }
+
+    #section3 h3 {
+        font-size: 3.6rem;
+        padding-inline: 10.9rem;
+    }
+
+    #section3 form {
+        padding-inline: 10.9rem;
+        max-width: 60.0rem;
+    }
+    
+}
